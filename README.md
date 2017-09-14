@@ -1,6 +1,6 @@
 # NBI Pilot
 
-This repository contains information related to the NDS Labs National Bridge Infrastructure (NBI) data pilot.  This pilot consists of a MongoDB containing the NBI dataset and a Jupyter environment with sample notebook for use in the Labs Workbench system.
+This repository contains preliminary information related to the NDS Labs National Bridge Infrastructure (NBI) data pilot.  This pilot consists of a MongoDB containing the NBI dataset and a Jupyter environment with sample notebook for use in the Labs Workbench system.
 
 ## Labs Workbench
 The [Labs Workbench](https://www.workbench.nationaldataservice.org) is a service of the National Data Service (NDS). To register for an account:
