@@ -24,12 +24,12 @@ The [specs](/specs) folder contains the Labs Workbench specification for the NBI
 * Select "Import" button
 
 To run the Jupyter for NBI environment:
-* In the "Catalot", select the "Jupyter for NBI" application then "Add" 
+* In the "Catalog", select the "Jupyter for NBI" application then "Add" 
 * Select "Applications" then "Launch"
 * Once the application is started, select the endpoint link
 * You will be prompted to enter your username/password
 
-Once running, you can load the sample notebook from this repository.
+You should now have access to your Jupyter environment.  You can either upload the sample notebook from this repository or clone the repository in Jupyter.
 
 ## Docker image
 The Docker image is intended for use in the NDS Labs Workbench service. The image extends the  ```jupyter/scipy-notebook``` adding matplotlib and pymongo dependencies.  To build:
