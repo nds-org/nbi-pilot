@@ -11,9 +11,7 @@ The [Labs Workbench](https://www.workbench.nationaldataservice.org) is a service
 * Your account will be approved by NDS staff
 
 ### NBI MongoDB in Labs Workbench
-The Labs Workbench system now contains a copy of the NBI MongoDB created using the [ProjectNBI](https://github.com/kaleoyster/ProjectNBI) process.  This database contains the complete set of records for all states.
-
-Indexes have been created on the structureNumber, stateCode, and year.
+The Labs Workbench system now contains a copy of the NBI MongoDB created using the [ProjectNBI](https://github.com/kaleoyster/ProjectNBI) process.  This database contains the complete set of records (17 million) for all states. Indexes have been created on the structureNumber, stateCode, and year.
 
 The [kubernetes](/kubernetes) directory contains the YAML file used to create the nbi-mongo instance.
 
