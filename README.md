@@ -1,4 +1,4 @@
-# NBI Pilot
+# National Bridge Inventory (NBI) Pilot
 
 This repository contains preliminary information related to the NDS Labs National Bridge Infrastructure (NBI) data pilot.  This pilot consists of a MongoDB containing the NBI dataset and a Jupyter environment with sample notebook for use in the Labs Workbench system.
 
