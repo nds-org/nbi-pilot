@@ -20,7 +20,7 @@ The [specs](/specs) folder contains the Labs Workbench specification for the NBI
 * Login to [Labs Workbench](https://www.workbench.nationaldataservice.org)
 * Select "Catalog"
 * Select "Import"
-* Paste the contents of [jupyternbi.json](jupyternbi.json)
+* Paste the contents of [jupyternbi.json](https://github.com/craig-willis/nbi-pilot/blob/master/spec/jupyternbi.json)
 * Select "Import" button
 
 To run the Jupyter for NBI environment:
