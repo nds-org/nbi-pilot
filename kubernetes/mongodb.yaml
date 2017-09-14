@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: nbi-mongo
+  name: nbi-mongo
+spec:
+  ports:
+    - port: 27017
+      targetPort: 27017
+  selector:
+    component: nbi-mongo
+---
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: nbi-mongo
+spec:
+  replicas: 1
+  selector:
+    component: nbi-mongo
+  template:
+    metadata:
+      labels:
+        component: nbi-mongo
+    spec:
+      volumes:
+       - hostPath:
+            path: "/var/glfs/global/public/nbi/mongo_data"
+         name: volumes
+      containers:
+      - name: nbi-mongo
+        image: mongo
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 27017
+          protocol: TCP
+        volumeMounts:
+          - name: volumes
+            mountPath: "/data/db"
+        resources:
+          limits:
+            cpu: "2"
+            memory: 8G
+          requests:
+            cpu: 100m
+            memory: 50M
+      nodeSelector:
+        ndslabs-node-role: compute
