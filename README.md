@@ -31,6 +31,12 @@ To run the Jupyter for NBI environment:
 
 You should now have access to your Jupyter environment.  You can either upload the sample notebook from this repository or clone the repository in Jupyter.
 
+## Jupyter notebook
+The sample notebook is based on the Robin Gandhi's [example](http://faculty.ist.unomaha.edu/rgandhi/r/mongoNBI.html).
+
+The notebook connects to the MongoDB hosted in Labs Workbench.
+
+
 ## Docker image
 The Docker image is intended for use in the NDS Labs Workbench service. The image extends the  ```jupyter/scipy-notebook``` adding matplotlib and pymongo dependencies.  To build:
 ```
@@ -38,6 +44,4 @@ cd docker
 docker build -t craigwillis/jupyter-nbi .
 ```
 
-## Jupyter notebook
-The sample notebook is based on the Robin Gandhi's [example](http://faculty.ist.unomaha.edu/rgandhi/r/mongoNBI.html).
 
