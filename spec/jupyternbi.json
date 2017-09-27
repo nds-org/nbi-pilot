@@ -2,6 +2,7 @@
   "key": "jupyternbi",
   "label": "Jupyter for NBI",
   "description": "Jupyter environment for National Bridge Infrastructure (NBI) data access",
+  "logo": "/asset/png/logos/jupyter-logo.png",
   "image": {
     "registry": "",
     "name": "craigwillis/jupyter-nbi",
@@ -40,9 +41,9 @@
   ],
   "resourceLimits": {
     "cpuMax": 2000,
-    "cpuDefault": 100,
+    "cpuDefault": 1000,
     "memMax": 8000,
-    "memDefault": 50
+    "memDefault": 2000
   },
   "tags": [
     "7",
