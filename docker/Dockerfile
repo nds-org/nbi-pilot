@@ -6,7 +6,7 @@ RUN echo "deb http://ftp.uk.debian.org/debian jessie-backports main" >> /etc/apt
     apt-get update -y && \
     apt-get install -y python-matplotlib && \
     apt-get clean && \
-    pip install pymongo pandas && \
+    pip install pymongo pandas folium && \
     rm -rf /var/lib/apt/lists/*
 
 USER $NB_USER
